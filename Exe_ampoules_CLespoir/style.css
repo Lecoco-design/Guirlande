@@ -6,7 +6,8 @@ header {
 }
 
 html,body{
-  
+  padding:0;
+  margin:0;  
   height: 100%;
 }
 
@@ -119,27 +120,25 @@ body {
    
   } 
 
-  .overlay {
-    position: relative;
-}
 
-.overlay img,
-.overlay svg {
+
+img.overlay ,
+svg.overlay  {
     position: absolute;
     top: 0;
     left: 0;
     transition: opacity 0.3s;
 }
 
-.overlay img {
-    opacity: 1;
-}
-
-.overlay:hover img {
+img.overlay  {
     opacity: 0;
 }
 
-.overlay:hover svg {
+img.overlay:hover  {
+    opacity: 1;
+}
+
+svg.overlay:hover  {
     opacity: 1;
 }
 
